@@ -1,10 +1,16 @@
-info from wines.com:
+<table>
 
-<ol>
-<% @wines.each do |wine| %>
-    <li>
-      <%= wine %>
-    </li>
-<% end %>
-</ol>
+  <tr>
+    <th>Name</th>
+    <th>Retail Price</th>
+    <th>Expert Rating</th>
+  </tr>
 
+  <% @wine_search_results.each do |wine_search_result| %>
+    <tr>
+      <td><%= wine_search_result[:name] %></td>
+      <td><%= wine_search_result[:retail_price] %></td>
+      <td><%= wine_search_result[:expert_rating] %></td>
+    </tr>
+  <% end %>
+</table>

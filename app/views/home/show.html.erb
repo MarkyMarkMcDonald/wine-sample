@@ -1,10 +1,8 @@
-<h2>Sup</h2>
-
 <%= form_tag("/wines", method: "post") do %>
-
-    <textarea name="wine-list" id="winelist" cols="30" rows="10"></textarea>
-
-    <br/>
-    <%= submit_tag("Search") %>
+  <label for="winelist">Enter a wine on each line</label>
+  <br/>
+  <textarea name="wine-list" id="winelist" cols="30" rows="10"></textarea>
+  <br/>
+  <%= submit_tag("Search") %>
 <% end %>
 
